@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'CustomFont';
+	src: url('TrajanPro-Regular.ttf') format('woff2'),
+		/* Best for modern browsers */
+		url('TrajanPro-Regular.ttf') format('woff');
+	/* Fallback for older browsers */
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	/* Shows fallback font until custom font loads */
+}
+
+body {
+	background-image: url("fireblu-fire.gif");
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	font-family: 'CustomFont', sans-serif;
+	color: orangered;
+	font-size: xx-large;
+}
+
+a:hover {
+	color: navajowhite;
+}
