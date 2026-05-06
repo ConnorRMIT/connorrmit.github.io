@@ -27,3 +27,11 @@ a {
 a:hover {
 	color: navajowhite;
 }
+
+.flexbox {
+	display: flex;
+}
+
+.stroke {
+	filter: drop-shadow(2px 2px 2px white);
+}
