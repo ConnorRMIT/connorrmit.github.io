@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'CustomFont';
+	src: url('../fonts/TrajanPro-Regular.ttf') format('woff2'),
+		/* Best for modern browsers */
+		url('../fonts/TrajanPro-Regular.ttf') format('woff');
+	/* Fallback for older browsers */
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	/* Shows fallback font until custom font loads */
+}
+
+body {
+	background-color: #0c121c;
+	color: white;
+	font-family: 'CustomFont', sans-serif;
+}
+
+img {
+	width: 25rem;
+	display: block;
+}
+
+a {
+	font-family: 'CustomFont', sans-serif;
+	color: orangered;
+	font-size: xx-large;
+}
+
+a:hover {
+	color: navajowhite;
+}
+
+.plaque {
+	background-color: gold;
+	color: black;
+	padding: 4px 8px;
+	text-align: center;
+	border-radius: 5px;
+	width: 25rem;
+	text-wrap: wrap;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.picture-frame {
+	display: inline-block;
+	border: 9px ridge orangered;
+	width: 25rem;
+	height: 100%;
+}
+
+/* Click to enlarge */
+.click-zoom {
+	width: auto;
+	height: 100%;
+}
+
+.click-zoom input[type=checkbox] {
+	display: none;
+}
+
+.click-zoom img {
+	transition: transform 0.25s ease;
+	cursor: zoom-in;
+}
+
+.click-zoom input[type=checkbox]:checked~div img {
+	margin: 0;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 80vw;
+	cursor: zoom-out;
+}

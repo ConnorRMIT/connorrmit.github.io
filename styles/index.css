@@ -1,8 +1,8 @@
 @font-face {
 	font-family: 'CustomFont';
-	src: url('TrajanPro-Regular.ttf') format('woff2'),
+	src: url('../fonts/TrajanPro-Regular.ttf') format('woff2'),
 		/* Best for modern browsers */
-		url('TrajanPro-Regular.ttf') format('woff');
+		url('../fonts/TrajanPro-Regular.ttf') format('woff');
 	/* Fallback for older browsers */
 	font-weight: normal;
 	font-style: normal;
@@ -11,7 +11,11 @@
 }
 
 body {
-	background-image: url("fireblu-fire.gif");
+	background-image: url("../images/background/fireblu-fire.gif");
+
+	@media (prefers-reduced-motion: reduce) {
+		background-color: #F10000;
+	}
 }
 
 img {
