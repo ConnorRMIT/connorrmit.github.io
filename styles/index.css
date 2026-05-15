@@ -18,6 +18,17 @@ body {
 	}
 }
 
+h1 {
+	font-family: 'CustomFont', sans-serif;
+	color: white;
+	font-size: xx-large;
+
+	@supports (-webkit-text-stroke: 1px white) {
+		-webkit-text-stroke: 0.2px white;
+		-webkit-text-fill-color: blue;
+	}
+}
+
 img {
 	width: 100%;
 }
